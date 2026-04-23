@@ -67,9 +67,9 @@ export default function Dashboard() {
             </Link>
             <div className="flex items-center gap-2">
               <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-nexus-purple to-nexus-cyan flex items-center justify-center">
-                <span className="text-white font-bold text-xs">N</span>
+                <span className="text-white font-bold text-xs">P</span>
               </div>
-              <span className="font-bold text-white">NEXUS</span>
+              <span className="font-bold text-white">PFECT</span>
               <span className="text-nexus-muted text-sm">/ Dashboard</span>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function Dashboard() {
                   </button>
                   <button type="submit" disabled={creating || !form.name || !form.description || !form.project_type}
                     className="flex-1 px-4 py-3 rounded-lg bg-nexus-purple hover:bg-purple-600 text-white font-medium transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2">
-                    {creating ? <><Loader2 className="w-4 h-4 animate-spin" /> Building...</> : "Build with NEXUS"}
+                    {creating ? <><Loader2 className="w-4 h-4 animate-spin" /> Building...</> : "Build with PFECT"}
                   </button>
                 </div>
               </form>

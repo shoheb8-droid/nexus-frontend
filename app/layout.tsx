@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NEXUS — AI Software Factory",
-  description: "The world's first governed, per-user autonomous AI software factory. Describe your idea — NEXUS builds the complete production app.",
-  keywords: ["AI", "software factory", "code generation", "autonomous", "NEXUS"],
+  title: "PFECT — Build anything with AI",
+  description: "Describe what you want to build. Web app, mobile app, Android, iOS, API — PFECT generates production-ready code in minutes.",
+  keywords: ["AI", "code generation", "web app", "mobile app", "software factory", "PFECT"],
   openGraph: {
-    title: "NEXUS — AI Software Factory",
-    description: "Describe your idea. NEXUS builds the complete production app.",
+    title: "PFECT — Build anything with AI",
+    description: "Describe what you want to build. Production-ready code in minutes.",
     url: "https://pfect.app",
-    siteName: "NEXUS",
+    siteName: "PFECT",
     type: "website",
   },
 };
