@@ -51,7 +51,7 @@ export default function Dashboard() {
       setForm({ name: "", description: "", project_type: "" });
       setShowForm(false);
       await load();
-    } catch (err) { alert("Error: " + err); }
+    } catch (err) { alert("Error: " + String(err)); }
     finally { setCreating(false); }
   }
 
