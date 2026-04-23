@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+// Next.js 16: renamed from middleware.ts → proxy.ts
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Skip middleware for login page, auth API, and Next.js internals
-  // (handled at matcher level below, but double-check here)
+  // Always allow login page and auth API through
   if (pathname.startsWith("/login") || pathname.startsWith("/api/auth")) {
     return NextResponse.next();
   }
@@ -22,7 +22,6 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Match everything EXCEPT Next.js internals, static files, login, and auth API
   matcher: [
     "/((?!_next/static|_next/image|_next/webpack-hmr|favicon\\.ico|login|api/auth).*)",
   ],
